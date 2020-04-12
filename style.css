@@ -1,0 +1,59 @@
+body{
+	margin: 0px;
+	padding:0px
+}
+#entête{
+	font-size: xx-large;
+	font-family: arial,"arial black", imapact, "sans serif";
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+
+}
+
+#div1,#div2, #div3{
+	display: inline-block;
+	width: 30%;
+	height: 120px;
+	border: 1px solid black;
+	margin:  20px
+}
+
+#div1{
+	background-color: gray
+}
+#div2{
+	background-color: gray
+}
+#div3{
+	background-color: gray
+}
+
+@media screen and (max-width: 767px){
+	#div1,#div2, #div3{
+		width: 90%;
+		margin-top: 10px;
+
+		text-align: justify;
+			
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+	#div1,#div2{
+		display: inline-table;
+		width: 43%
+		
+	}
+	#div3{
+		width: 86%;
+		padding: 20px;
+	}
+} 
+@media screen and (min-height: 992px){
+#div1,#div2, #div3{
+	width: 33%;
+	padding: 20px;
+	margin: 20px;
+
+}
+}
